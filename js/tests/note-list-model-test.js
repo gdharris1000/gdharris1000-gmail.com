@@ -12,8 +12,10 @@ function createsNote(){
 function displayNotes(){
     var noteList = new NoteList();
     noteList.create("hello");
+    noteList.create("hi")
     var notes = noteList.display();
-    assert.isTrue(notes[0].text == "hello", "display notes");
+    assert.isTrue(notes[0].text == "hello", "display notes1");
+    assert.isTrue(notes[1].text == "hi", "display notes2");
 }
 
 instanciatesWithArray();
