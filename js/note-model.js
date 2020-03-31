@@ -12,7 +12,9 @@ Note.prototype = (function(){
     display: display
   }
 
-})()
+})();
+
+
 // Note.prototype.display = function(){
 //   return this.text;
 // }

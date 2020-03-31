@@ -1,10 +1,10 @@
 var assert = {
     isTrue: function(assertionToCheck, name){
         if(!assertionToCheck){
-            throw new Error("Assertion failed: " + name + " is not truthy");
+            throw new Error(`%c Assertion failed: ${name} is not truthy`, "color: red");
         }
         else{
-            console.log(name + " passed!");
+            console.log(`%c${name} passed!`, "color: green; background-color: black; font-size: 14px;");
         }
     }
 }
