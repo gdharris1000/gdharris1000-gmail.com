@@ -1,2 +1,12 @@
+(function(exports){
+    function displayHTML(notes){
+        document.getElementById("app").innerHTML = notes;
+    }
 
-    document.getElementById("app").innerHTML = "Howdy";
+    exports.displayHTML = displayHTML;
+})(this);
+
+
+    
+
+
