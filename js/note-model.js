@@ -14,7 +14,6 @@ Note.prototype = (function(){
 
 })();
 
-
 // Note.prototype.display = function(){
 //   return this.text;
 // }
