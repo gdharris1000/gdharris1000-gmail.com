@@ -18,6 +18,24 @@ function displayNotes(){
     assert.isTrue(notes[1].text == "hi", "display notes2");
 }
 
+function checkNotesHaveIds(){
+    var noteList = new NoteList();
+    noteList.create("hello");
+    noteList.create("hi")
+    assert.isTrue(noteList.list[0].id == 0, "check note id is 0");
+    assert.isTrue(noteList.list[1].id == 1, "check note id is 1");
+}
+
+function testFindNote(){
+    var noteList = new NoteList();
+    noteList.create("hello");
+    noteList.create("hi")
+    assert.isTrue(noteList.findNote(0).text == "hello", "check find note");
+
+}
+
 instanciatesWithArray();
 createsNote();
 displayNotes();
+checkNotesHaveIds();
+testFindNote();

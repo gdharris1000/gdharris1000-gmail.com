@@ -1,6 +1,11 @@
 function instanciatesWithText(){
-    var note = new Note("Hello world");
+    var note = new Note("Hello world", 0);
     assert.isTrue(note.text === "Hello world", "instanciates with text");
+}
+
+function instanciatesWithId(){
+    var note = new Note("Hello world", 0);
+    assert.isTrue(note.id === 0, "instanciates with id");
 }
 
 function returnsNoteText(){
@@ -11,4 +16,5 @@ function returnsNoteText(){
 
 
 instanciatesWithText();
+instanciatesWithId();
 returnsNoteText();
